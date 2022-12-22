@@ -1,0 +1,181 @@
+@import url(./css/normalize.css);
+@import url(./css/base.css);
+
+/* Тело */
+.title {
+  font-size: 12px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 621px;
+  height: 492px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Шапка */
+
+.header {
+  background: #FE8663;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+}
+
+.header__title {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.close {
+  width: 13px;
+  height: 13px;
+}
+
+/* Фильтры */
+
+.filter {
+  background: #F0F0F0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 10px;
+}
+
+input {
+  width: 289px;
+  height: 26px;
+  border: none;
+  border-radius: 40px;
+}
+
+input:focus {
+  outline: none;
+} 
+
+input[placeholder] {
+  font-size: 12px;
+  padding: 10px;
+  padding-left: 25px;
+}
+
+input.search-friends-list[placeholder] {
+  padding: 10px;
+}
+
+.search {
+  background-color: #FFFFFF;
+  background-image: url(./img/search.png);
+  background-repeat: no-repeat;
+  background-position: 3%;
+}
+
+/* Списки */
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  background: #FFFFFF;
+  height: 400px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  overflow: overlay;
+
+  height: 100%;
+}
+
+ul::-webkit-scrollbar {
+  width: 3px;       /* ширина scrollbar */
+}
+
+ul::-webkit-scrollbar-track {
+  background: inherit;      /* цвет дорожки */
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: #C4C4C4;    /* цвет плашки */
+  border-radius: 2px;         /* закругления плашки */
+}
+
+li {
+  font-family: 'Fira Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  max-width: 263px;
+}
+
+.list-item-clone {
+  background: #ffe6c8;
+  pointer-events: none;
+  position: absolute;
+}
+
+li:hover {
+  background-color: #F0F0F0;
+}
+
+.friends .list-item-swap:after {
+  content: url('../../projects/friendsfilter/img/arrow.png');
+  cursor: pointer;
+}
+
+.friends-list .list-item-swap:after {
+  content: url('../../projects/friendsfilter/img/delete.png');
+  cursor: pointer;
+}
+
+.list-item-swap {
+  width: 16px;
+  height: 10px;
+  margin-left: auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 16px;
+  padding-bottom: 0;
+}
+
+.title-ul {
+  padding: 2px;
+  font-weight: 500;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  margin-right: 7px;
+}
+
+.avatar__img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.name {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Подвал */
+
+.footer {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  min-height: 45px;
+  background: #F0F0F0;
+}
